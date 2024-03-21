@@ -1,0 +1,17 @@
+.bg-dots {
+  position: relative;
+  background-color: #000;
+}
+
+.bg-dots::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 2%, transparent 0);
+  background-size: 20px 20px; /* Adjust dot size here */
+  z-index: -1;
+}
